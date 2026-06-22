@@ -1,6 +1,7 @@
 {
   "name": "darshan-dev-pack",
   "displayName": "darshan-dev-pack",
+  "publisher": "DARSHANRANA",
   "description": "mobile and web app extension",
   "version": "0.0.1",
   "engines": {
