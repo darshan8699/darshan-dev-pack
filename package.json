@@ -9,6 +9,10 @@
   "categories": [
     "Extension Packs"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darshan8699/darshan-dev-pack.git"
+  },
   "extensionPack": [
     "alduncanson.react-hooks-snippets",
     "anbuselvanrocky.bootstrap5-vscode",
