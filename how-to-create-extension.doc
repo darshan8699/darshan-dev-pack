@@ -1,0 +1,127 @@
+Here is a complete step-by-step guide to create a VS Code Extension + how to upgrade it properly 👇
+
+🚀 PART 1: Create VS Code Extension (Full Steps)
+✅ Step 1: Install required tools
+
+Install Node.js:
+
+https://nodejs.org
+
+Install VS Code Extension Generator:
+
+npm install -g yo generator-code
+✅ Step 2: Create new extension
+
+Run:
+
+yo code
+
+Then select:
+
+👉 New Extension Pack (if you are making your current project)
+OR
+👉 New Extension (if starting fresh)
+
+Fill details:
+
+Name → your extension name
+Publisher → your VS Code publisher ID
+Description → short description
+Git → yes/no
+✅ Step 3: Open project in VS Code
+cd your-extension-folder
+code .
+✅ Step 4: Understand main files
+📦 package.json (most important)
+
+Contains:
+
+name
+version
+extensionPack (your list)
+metadata
+📁 extensionPack (your case)
+
+For extension packs:
+
+"extensionPack": [
+  "extension.id.here"
+]
+✅ Step 5: Add icon (optional but recommended)
+
+Add:
+
+images/icon.png
+
+Then in package.json:
+
+"icon": "images/icon.png"
+✅ Step 6: Test extension locally
+
+Press:
+
+F5
+
+This opens:
+👉 Extension Development Host
+
+✅ Step 7: Install VSCE (publisher tool)
+npm install -g @vscode/vsce
+✅ Step 8: Login to marketplace
+vsce login your-publisher-name
+✅ Step 9: Package extension
+vsce package
+
+This creates:
+
+your-extension.vsix
+✅ Step 10: Publish extension
+vsce publish
+🔁 PART 2: How to Upgrade Extension (VERY IMPORTANT)
+
+Every update follows this rule:
+
+✅ Step 1: Increase version
+
+Example:
+
+First release:
+"version": "0.0.1"
+Next update:
+"version": "0.0.2"
+
+or
+
+"version": "0.1.0"
+
+👉 NEVER reuse old version number
+
+✅ Step 2: Make your changes
+
+Examples:
+
+add/remove extensions in extensionPack
+update description
+change icon
+fix metadata
+✅ Step 3: Rebuild package
+vsce package
+✅ Step 4: Publish update
+vsce publish
+⚠️ IMPORTANT RULES (very important for your case)
+❌ You CANNOT:
+reuse same version (0.0.1 again)
+reuse deleted extension name after unpublish
+publish without incrementing version
+✅ You MUST:
+always increase version
+keep same publisher
+keep same extension name for updates
+🧠 Simple Upgrade Flow
+Edit code
+   ↓
+Increase version
+   ↓
+vsce package
+   ↓
+vsce publish

@@ -2,7 +2,7 @@
   "name": "darshan-dev-kit",
   "displayName": "Darshan Dev Kit",
   "description": "A powerful VS Code extension pack for React, React Native, and frontend developers. Includes essential tools for JavaScript, TypeScript, HTML, CSS, Git, formatting (Prettier), linting (ESLint), snippets, debugging, and productivity enhancements.",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "darshanrana",
   "icon": "images/icon.png",
   "engines": {
@@ -22,7 +22,6 @@
     "bracketpaircolordlw.bracket-pair-color-dlw",
     "chakrounanas.turbo-console-log",
     "christian-kohler.path-intellisense",
-    "codeium.codeium",
     "codezombiech.gitignore",
     "continue.continue",
     "dbaeumer.vscode-eslint",
@@ -42,7 +41,6 @@
     "msjsdiag.vscode-react-native",
     "naumovs.color-highlight",
     "oderwat.indent-rainbow",
-    "openai.chatgpt",
     "orta.vscode-jest",
     "pflannery.vscode-versionlens",
     "pkief.material-icon-theme",
@@ -58,6 +56,13 @@
     "waderyan.gitblame",
     "wmaurer.change-case",
     "xabikos.javascriptsnippets",
-    "zignd.html-css-class-completion"
+    "zignd.html-css-class-completion",
+    "burkeholland.simple-react-snippets",
+    "lihui.vs-color-picker",
+    "dsznajder.es7-react-js-snippets",
+    "hasanakg.firebase-snippets",
+    "bradlc.vscode-tailwindcss",
+    "cobaltblu27.rainbow-highlighter",
+    "wayou.vscode-todo-highlight"
   ]
 }
