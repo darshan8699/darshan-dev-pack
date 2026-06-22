@@ -1,8 +1,8 @@
 {
-  "name": "darshan-dev-pack",
+  "name": "darshan-dev-kit",
   "displayName": "Darshan Dev Kit",
   "description": "A powerful VS Code extension pack for React, React Native, and frontend developers. Includes essential tools for JavaScript, TypeScript, HTML, CSS, Git, formatting (Prettier), linting (ESLint), snippets, debugging, and productivity enhancements.",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "publisher": "darshanrana",
   "icon": "images/icon.png",
   "engines": {
